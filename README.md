@@ -49,9 +49,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 - **[Lendio](https://lendio.com)**
 
+## Cara Clone laravel
+- Buka direktori project kemudian ketik cmd pada direktori folder.
+- Ketik git clone https://github.com/mrcamelia/bwd10.git.
+- Apabila telah selesai, kemudian buka folder project yang telah di clone.
+- Ketik composer install pada terminal
+- Sesuaikan konfigurasi dengan folder .env atau /env.example
+- Ketik php artisan migrate untuk migrasi database
+- Jalankan laravel dengan mengetik php artisan serve
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
 
 ## Code of Conduct
 
