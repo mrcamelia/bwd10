@@ -1,0 +1,71 @@
+.navbar a{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.container{
+    font-family: 'Ubuntu', sans-serif;
+}
+.body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+@media (max-width: 770px) {
+    .category-list-img a img{
+        height: 100% !important;
+        width: 100% !important;
+        margin:auto;
+        vertical-align: middle;
+    }
+    .category-list-img .product-content-list .product-list-info h5{
+        margin-right: 5%;
+    }
+    .card a{
+        font-size: 1rem;
+    }
+    .umkm-img img{
+        height: 100% !important;
+        width: 100% !important;
+        margin:auto;
+        vertical-align: middle;
+    }
+    .umkm-list-img a img{
+        width: 100% !important;
+        margin:auto;
+        vertical-align: middle;
+    }
+    .container-fluid .image img{
+        width:100% !important;
+    }
+    #grid-sidebar3 img{
+        width: 100% !important;
+        margin:auto;
+        vertical-align: middle;
+    }
+    .sidebar-categories a{
+        font-size: 1rem;
+    }
+    .sidebar-categories h4{
+        font-size: 1rem;
+    }
+    .sidebar-categories h7{
+        font-size: 1rem;
+    }
+    #grid-sidebar3 .product-content a{
+        margin-right: 5%;
+    }
+    .product-wrapper{
+        height: 95% !important;
+        width: 100% !important;
+    }
+    .col .list-img{
+        width:90% !important;
+        height:300px !important;
+    }
+    .col .text-left{
+        font-size: 0.75rem;
+    }
+}
