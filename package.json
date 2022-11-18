@@ -4,6 +4,7 @@
         "dev": "vite",
         "build": "vite build"
     },
+  "homepage":"http://mrcamelia.github.io/bwd10",
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.4.2",
