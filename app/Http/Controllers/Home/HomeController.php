@@ -24,8 +24,6 @@ class HomeController extends Controller
         
     }
     public function favorite($slug){
-        // $favorites = Favorite::where('user_id', Auth::user()->id)
-        //     ->orderBy('resep_id','desc')->count();
         $recipes = Recipe::select('id','user_id','judul','slug','description','foto')->where('slug',$slug)->firstorFail;
         $favorites = Favorite::where('resep_id',$recipes->id)->count();
         return view('user.partials.main', compact('favorites'));
@@ -77,24 +75,11 @@ class HomeController extends Controller
     public function show($slug)
     {
         if(Recipe::where('slug',$slug)->exists()){
-            // $recipes= Recipe::where('slug',$slug)->first();
-            // $ingredients = Ingredient::where('resep_id',$recipes->id)->get();
-            // $steps=Step::where('resep_id',$recipes->id)->get();
-            // $this->data['recipes']= Recipe::All();
-            // $this->data['ingredients'] = Ingredient::All();
-            // $this->data['steps']=Step::All();
-            // $this->data['users']=User::All();
-            // if(Recipe::where('slug',$slug)->exists()){
             $this->data['recipes']= Recipe::where('slug',$slug)->first();
             $this->data['ingredients'] = Ingredient::orderBy('id', 'ASC')->get();
             $this->data['steps']=Step::orderBy('id','ASC')->get();
             $this->data['users']=User::orderBy('id','ASC')->get();
         }
-        // $this->data['recipes']= Recipe::All();
-        //     $this->data['ingredients'] = Ingredient::All();
-        //     $this->data['steps']=Step::All();
-        //     $this->data['users']=User::All();
         return view('user.components.detail', $this->data);
-        // return view('user.components.detail',compact('recipes','ingredients','steps'));
     }
 }
